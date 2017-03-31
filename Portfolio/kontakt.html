@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+
+<body>
+
+    <!-- header-->
+    <header>
+        Portfolio <i class="icon-gitlab"></i>
+    </header>
+
+    <!-- menu -->
+    <aside>
+        <div class='menu'>Menu</div>
+        <nav>
+            <ul>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="omnie.html">O mnie</a></li>
+                <li><a href="oferta.html">Oferta</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a class="none">&nbsp;</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div style="clear:both;"></div>
+
+    <!--///////////////////////////////////////////////////////////// -->
+
+    <div class="wrapper">
+
+        <!-- Section -->
+        <section>
+
+            <form action="mailto:twój_adres_poczty@domena" method="post" enctype="text/plain">
+                <div class="tekst">
+
+                    <h2>Kontakt</h2><br />
+                    <h4>Skontaktuj się ze mną telefonicznie:</h4><br />
+                    <b>Telefon: 515 515 515</b><br /><br /><br /><br />
+                    <h4>Lub wypełnij formularz:</h4><br />
+                    <b>* pola wymagane</b><br /><br />
+
+                    <label class="imie"><b>Imię:
+                    <input class="enjoy-input" type="text" name="imie" required> *
+                    </b></label><br /><br />
+
+                    <label class="email"><b>E-mail:
+                    <input class="enjoy-input" type="email" name="email" required> *
+                    </b></label><br /><br />
+
+                    <label><b>Telefon:</b>
+                    <input class="enjoy-input" type="tel" pattern="[0-9]{9}" name="tel">
+                    </label><br /><br /><br />
+
+                    <label><b>Wiadomść:*</b><br /><br />
+                    <textarea class="enjoy-input" name="komentarz" rows="10" cols="60" required></textarea><br /><br />
+                    <label>
+
+                    <input type="submit" class="button" name="wyslij" value="Wyślij wiadomość"><br /><br />
+
+                </div>
+            </form>
+
+        </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>2017 &copy; Wszelkie prawa zastrzeżone</p>
+    </footer>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".menu").click(function() {
+                $('nav').slideToggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

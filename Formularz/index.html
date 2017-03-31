@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularz</title>
+
+    <meta name="description" content="Formularz" />
+    <meta name="keywords" content="Formularz" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header-->
+    <header>
+        Formularz
+    </header>
+
+    <!-- aside -->
+    <aside>
+        <nav>
+            <ul>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a href="index.html">I</a></li>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a href="test.html">II</a></li>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a class="none">&nbsp;</a></li>
+                <li><a class="none">&nbsp;</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div style="clear:both;"></div>
+
+    <!--///////////////////////////////////////////////////////////// -->
+
+    <div class="wrapper">
+
+        <!-- Section -->
+        <section>
+
+        <!-- Formularz -->
+            <form action="mailto:twój_adres_poczty@domena" method="post" enctype="text/plain">
+                <div class="formularz">
+
+                        <h2>HTML</h2><br />
+
+                        <h4>Przkład pola tekstowego:</h4><br />
+                        <b>Imię: </b>
+                        <input class="enjoy-input" type="text" name="imie"><br /><br />
+
+                        <h4>Przkład pola z hasłem:</h4><br />
+                        <b>Hasło: </b>
+                        <input class="enjoy-input" type="password" name="haslo"><br /><br />
+
+                        <h4>Przkład pola radio:</h4><br />
+                        <b>Podaj swoją płeć:</b><br /><br />
+                        <input type="radio" name="Płeć" value="Kobieta" />Kobieta
+                        <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna<br /><br />
+
+                        <h4>Przkład pola wielokrotnego wyboru:</h4><br />
+                        <b>Wybierz dwa owoce:</b><br /><br />
+                        <input type="checkbox" name="owoc" value="owoc">Malina<br />
+                        <input type="checkbox" name="owoc" value="owoc">Śliwka<br />
+                        <input type="checkbox" name="owoc" value="owoc">Banan<br /><br />
+
+                        <h4>Przykład listy rozwijalnej (combo):</h4><br />
+                        <b>Wielkość miejscowości:</b><br /><br />
+                        <select class="enjoy-input" name="miejscowość" size="1">
+                            <option>wybierz</option>
+                            <option>wieś</option>
+                            <option>miasto do 50 tys. mieszkańców</option>
+                            <option>miasto 50 - 100 tys. mieszkańców</option>
+                            <option>miasto 100 - 500 tys. mieszkańców</option>
+                            <option>miasto powyżej 500tys. mieszkańców</option>
+                        </select><br /><br />
+
+                        <h4>Przykład pola listy (listbox):</h4><br />
+                        <b>Używana przeglądarka:</b><br /><br />
+                        <select class="enjoy-input" name="przeglądarka" size="3">
+                            <option>Internet Explorer</option>
+                            <option>Mozilla</option>
+                            <option>Chrome</option>
+                            <option>Opera</option>
+                            <option>Inne</option>
+                        </select><br /><br />
+
+                        <h4>Przykład przycisku wysyłania formularza:</h4><br />
+                        <input type="submit" class="button" name="wyslij" value="Wyślij formularz"><br /><br />
+
+                        <h4>Przykład przycisku czyszczenia formularza:</h4><br />
+                        <input class="enjoy-input" type="text" name="imie"><br /><br />
+                        <input class="button" type="reset"><br /><br />
+
+                        <h4>Przykład wierwszowego pola tekstowego:</h4><br />
+                        <textarea class="enjoy-input" name="komentarz" rows="5" cols="50">Proszę, wpisz tutaj jakiś komentarz...</textarea><br /><br />
+
+                        <h2>HTML5</h2><br />
+
+                        <h4>Przykład pola datalist:</h4><br />
+                        <b>Zawód:</b><br /><br />
+                        <input class="enjoy-input" list="zawod">
+                        <datalist id="zawod">
+                            <option value="wyższy urzędnik">
+                            <option value="kierownik">
+                            <option value="wolny zawód">
+                            <option value=" biznesmen">
+                            <option value="rolnik">
+                            <option value="robotnik">
+                            <option value="technik">
+                            <option value="student">
+                            <option value="uczeń">
+                            <option value="emeryt">
+                            <option value="bezrobotny">
+                        </datalist><br /><br /><br />
+
+                        <h4>Przykład pola novalidate:</h4><br />
+                        <form action="#">
+                            <b>E-mail:</b> <input class="enjoy-input" type="email" name="email">
+                            <input class="button" type="submit" name="wyslij" value="Wyślij formularz">
+                        </form><br /><br />
+
+                        <h4>Przykład pola range:</h4><br />
+                        <input type="range" name="pasek" min="5" max="10"><br /><br />
+
+                        <h4>Przykład pola z pattern:</h4><br />
+                        <b>Podaj 6 cyfrowy Pin:</b><br /><br />
+                        <form action="#">
+                            <b>Pin:</b> <input class="enjoy-input" type="text" name="pesel" pattern="[0-9]{6}" title="Podaj 6 cyfrowy pin">
+                            <input class="button" type="submit">
+                        </form><br /><br />
+
+                        <h4>Przykład pola z placeholder:</h4><br />
+                        <input class="enjoy-input" type="text" name="nazwa" placeholder="Przykład"><br /><br /><br />
+
+                        <h4>Przykład pola z required:</h4>
+                        <form action="#"><br />
+                            <b>Niewymagane:</b> <input class="enjoy-input" type="text" name="nie">
+                            <b>Wymagane:</b> <input class="enjoy-input" type="text" name="tak" required>
+                            <input class="button" type="submit">
+                        </form><br /><br />
+
+                        <h4>Przykład pola z step (co 5):</h4><br />
+                        <input class="enjoy-input" type="number" name="liczba" step="5"><br /><br /><br />
+
+                        <h4>Przykład pola email:</h4><br />
+                        <b>Email:</b> <input class="enjoy-input" type="email" name="email"><br /><br /><br />
+
+                        <h4>Przykład pola color:</h4><br />
+                        <b>Kolor:</b> <input type="color" name="xd"><br /><br /><br /><br />
+
+                </div>
+            </form>
+
+        </section>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>2017 &copy; Wszelkie prawa zastrzeżone</p>
+    </footer>
+
+</body>
+
+</html>
