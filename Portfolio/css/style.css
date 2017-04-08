@@ -1,11 +1,10 @@
 * {padding: 0;margin: 0;}
 html, body {background: #f6f6f6;height:100%;}
 
-header
-{
-    padding: 20px;
-    width: 100%-40px;
-    font-size: 40px;
+.logo{
+    padding: 25px;
+    width: 100%-50px;
+    font-size: 20px;
     text-align: center;
     background: #302f34;
     border-bottom: 1px solid #1b1b1d;;
@@ -27,14 +26,14 @@ header
 @media (min-width: 800px){
     .menu {display:none;}
 
-    aside nav {display:block !important;}
-    aside nav ul {list-style:none;}
-    aside nav ul li {margin-bottom:0px;float:left;width: 11.111%;}
-    aside nav ul li a {display:block;text-decoration:none;color:#fff;background:#cd181f;padding:12px 20px;box-shadow: 1px 4px 3px 0px rgba(0,0,0,0.75);}
-	aside nav ul li a:hover {box-shadow: inset 0 2px 9px 0 rgba(0,0,0,0.75);}
-    aside nav ul li a:active {background-color: #770e12;}
-    aside nav ul li a.none:hover {background:#cd181f;box-shadow: inset 0 0 0 0 ;}
-	aside nav ul li a.none {background:#cd181f;box-shadow: inset 0 0 0 0 ;}
+    header nav {display:block !important;}
+    header nav ul {list-style:none;}
+    header nav ul li {margin-bottom:0px;float:left;width: 11.111%;}
+    header nav ul li a {display:block;text-decoration:none;color:#fff;background:#cd181f;padding:12px 20px;box-shadow: 1px 4px 3px 0px rgba(0,0,0,0.75);}
+	header nav ul li a:hover {box-shadow: inset 0 2px 9px 0 rgba(0,0,0,0.75);}
+    header nav ul li a:active {background-color: #770e12;}
+    header nav ul li a.none:hover {background:#cd181f;box-shadow: inset 0 0 0 0 ;}
+	header nav ul li a.none {background:#cd181f;box-shadow: inset 0 0 0 0 ;}
 }
 
 @media (max-width: 800px) {
@@ -42,19 +41,18 @@ header
     .menu:hover {box-shadow: inset 0 2px 9px 0 rgba(0,0,0,0.75);}
     .menu:active {background-color: #770e12;}
 
-	aside nav {display:none;}
-	aside nav ul {list-style:none;}
-	aside nav ul li {border-bottom: 1px solid #1b1b1d;}
-	aside nav ul li a {display:block;font-size:14px;font-weight:700;text-decoration:none;color:#fff;background:#333;padding:12px 20px}
-    aside nav ul li a:hover{box-shadow: inset 5px 10px 43px 0 rgba(0,0,0,0.75);}
-    aside nav ul li a.none {display:none;}
-    aside nav ul li a:active {background-color: #000;}
+    header nav {display:none;}
+	header nav ul {list-style:none;}
+	header nav ul li {border-bottom: 1px solid #1b1b1d;}
+	header nav ul li a {display:block;font-size:14px;font-weight:700;text-decoration:none;color:#fff;background:#333;padding:12px 20px}
+    header nav ul li a:hover{box-shadow: inset 5px 10px 43px 0 rgba(0,0,0,0.75);}
+    header nav ul li a.none {display:none;}
+    header nav ul li a:active {background-color: #000;}
 }
 
-/*------Wrapper------*/
+/*------Container------*/
 
-
-.wrapper {
+.container {
     margin: 0 ;
     min-height:calc(100% - 50px);
     -webkit-box-shadow: inset -1px 3px 37px 0px rgba(0,0,0,0.75);
@@ -62,28 +60,31 @@ header
     box-shadow: inset -1px 3px 37px 0px rgba(0,0,0,0.75);
 }
 
-section  {
+.wrapper  {
     width: 90%;
     max-width: 1050px;
     margin: 0 auto;
     background:#fff;
-    height: 1050px;
+    min-height: 1050px;
     -webkit-box-shadow: 2px 5px 12px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 5px 12px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 5px 12px 0px rgba(0,0,0,0.75);
 }
 
-section p{padding: 40px 40px 20px 40px;}
+/*------ Main ------*/
+
+main article header {padding:50px 40px 20px 50px;font-size: 18px;}
+main article header p {font-size: 17px;}
 
 /*------Slider------*/
 
-#box{text-align: center;}
-#slider{height: 640px;margin: 0 auto;padding: 30px 0 30px 0;}
-img {max-width: 100%;height: auto;}
+.frame{text-align: center;}
+#slider{height: 640px;margin: 0 auto;padding: 15px 0 30px 0;}
+img {max-width: 100%;height: auto;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 /*------Formularz------*/
 
-.tekst{padding:50px 40px 20px 50px;font-size: 18px;}
+.tekst{padding:0 40px 20px 50px;font-size: 18px;}
 b {color: #018dc4;}
 h2{text-align: left;}
 .imie{padding-left: 20px;}
@@ -91,5 +92,5 @@ h2{text-align: left;}
 
 /*------Footer------*/
 
-footer {height:50px;background:#1b1b1d;color:#FFF;text-align:center;}
-footer p {padding-top:15px;}
+.footer {height:50px;background:#1b1b1d;color:#FFF;text-align:center;}
+.footer p {padding-top:15px;}
