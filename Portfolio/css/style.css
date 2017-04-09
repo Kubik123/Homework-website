@@ -23,7 +23,7 @@ html, body {background: #f6f6f6;height:100%;}
     cursor: pointer;
 }
 
-@media (min-width: 800px){
+@media (min-width: 900px){
     .menu {display:none;}
 
     header nav {display:block !important;}
@@ -36,7 +36,7 @@ html, body {background: #f6f6f6;height:100%;}
 	header nav ul li a.none {background:#cd181f;box-shadow: inset 0 0 0 0 ;}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 	.menu {display:block;}
     .menu:hover {box-shadow: inset 0 2px 9px 0 rgba(0,0,0,0.75);}
     .menu:active {background-color: #770e12;}
