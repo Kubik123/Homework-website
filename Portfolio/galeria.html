@@ -16,6 +16,18 @@
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/slider.js"></script>
 
+    <style>
+    .pojemnik {height: 800px;width: 400px;margin: 20px auto 100px auto;}
+    .obraz {box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);font-size: 17px;}
+    .obraz:hover {box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);color: #018dc4;}
+    .obraz img:hover {opacity: 0.9}
+    .opis {padding: 15px;text-align: center;}
+    .wrapper {height: 100%;}
+    .stopka {margin-top: 35px;text-align: center;}
+    main article article {padding-bottom: 60px;}
+    </style>
+
+
 </head>
 
 <body onload="zmienslajd()">
@@ -58,7 +70,14 @@
 
                         <div class="frame">
 
-                            <div id="slider"></div>
+                            <div class="pojemnik">
+                                <div class="obraz">
+                                    <a id="slider" href="galeria.html">
+
+                                    </a>
+                                    <div class="opis">www.xyz.pl</div>
+                                </div>
+                            </div>
 
                             <span class="button" onclick="ustawslajd(1)" style="cursor:pointer;">[ 1 ]</span>
                             <span class="button" onclick="ustawslajd(2)" style="cursor:pointer;">[ 2 ]</span>

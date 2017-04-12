@@ -26,7 +26,7 @@ function zmienslajd() {
     document.getElementById("slider").innerHTML = plik;
     $("#slider").fadeIn(500);
 
-    timer1 = setTimeout("zmienslajd()", 5000);
-    timer2 = setTimeout("schowaj()", 4500);
+    timer1 = setTimeout("zmienslajd()", 7000);
+    timer2 = setTimeout("schowaj()", 6500);
 
 }
