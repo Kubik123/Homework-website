@@ -11,6 +11,19 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <style>
+    .pojemnik {height: 600px;width: 300px;margin: 60px auto 100px auto;}
+    .obraz {box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);font-size: 17px;}
+    .obraz:hover {box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);color: #018dc4;}
+    .obraz img:hover {opacity: 0.9}
+    .opis {padding: 15px;text-align: center;}
+    .wrapper {height: 100%;}
+    .stopka {margin-top: 35px;text-align: center;}
+    main article article {padding-bottom: 60px;}
+    </style>
+
 
 </head>
 
@@ -48,11 +61,37 @@
 
                         <h1>Strona Główna</h1><br>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat malesuada metus, ut pretium massa porta sit amet. Vivamus nulla leo, pretium vitae suscipit ac, porttitor non tortor. Integer facilisis nisl quis laoreet auctor. Quisque et feugiat lorem. Vestibulum magna dolor, laoreet in erat a, rutrum vulputate felis. Phasellus blandit lobortis ex ut pulvinar. Integer gravida nunc tincidunt odio venenatis, non egestas sem tempus. Cras dignissim tortornon magna lobortis, in porttitor elit laoreet.<br><br></p>
-
-                        <p>Aenean ut ligula dapibus, volutpat libero quis, pharetra ante. Nulla placerat at dolor eget vestibulum. Vivamus vitae massa rhoncus, gravida justo eu, egestas mauris. Nam ullamcorper sodales dolor sed ullamcorper. Nulla quis odio leo. Mauris aliquam bibendum ipsum in facilisis. Sed efficitur rutrum auctor. Vestibulum a rutrum metus, sit amet aliquam sapien. Sed ullamcorper fringilla enim, vitae cursus purussuscipit at. Duis id gravida metus. Pellentesque bibendum nisl sed ligula iaculis, at condimentum mi lacinia.<br></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat malesuada metus, ut pretium massa porta sit amet. Vivamus nulla leo, pretium vitae suscipit ac, porttitor non tortor. Integer facilisis nisl quis laoreet auctor.
+                        Quisque et feugiat lorem. Vestibulum magna dolor, laoreet in erat a, rutrum vulputate felis. Phasellus blandit lobortis ex ut pulvinar. Integer gravida nunc tincidunt odio venenatis, non egestas sem tempus. Cras dignissim tortornon
+                        magna lobortis, in porttitor elit laoreet.</p>
 
                     </header>
+
+                    <article>
+
+                        <div class="pojemnik">
+                            <div class="obraz">
+                                <a href="index.html">
+                                    <img src="img/1.png" alt="Strona Pierwsza" width="300" height="600">
+                                </a>
+                                <div class="opis">www.xyz.pl</div>
+                            </div>
+                        </div>
+
+                        <div class="pojemnik">
+                            <div class="obraz">
+                                <a href="index.html">
+                                    <img src="img/2.png" alt="Strona Druga" width="300" height="600">
+                                </a>
+                                <div class="opis">www.xyz.pl</div>
+                            </div>
+                        </div>
+
+                        <div class="stopka">
+                            <a href="galeria.html"><span class="button" style="cursor:pointer;">Zobacz więcej</span></a>
+                        </div>
+
+                    </article>
                 </article>
             </div>
         </main>
@@ -66,7 +105,6 @@
         </div>
     </footer>
     <!-- footer-close -->
-
     <script src="js/jquery-1.11.1.min.js"></script>
     <script>
         $(document).ready(function() {

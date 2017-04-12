@@ -65,7 +65,7 @@ html, body {background: #f6f6f6;height:100%;}
     max-width: 1050px;
     margin: 0 auto;
     background:#fff;
-    min-height: 1050px;
+    height: 1050px;
     -webkit-box-shadow: 2px 5px 12px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 5px 12px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 5px 12px 0px rgba(0,0,0,0.75);
@@ -74,8 +74,8 @@ html, body {background: #f6f6f6;height:100%;}
 /*------ Main ------*/
 
 main article header {padding:50px 40px 20px 50px;font-size: 18px;}
-main article header p {font-size: 17px;}
-
+main article header p {font-size: 17px;line-height: 32px;}
+main article article p {line-height: 32px;}
 /*------Slider------*/
 
 .frame{text-align: center;}
